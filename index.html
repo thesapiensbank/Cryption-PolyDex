@@ -77,12 +77,18 @@
  
               <p class="text-light powered" style="opacity: 0.75;">powered by</p> &nbsp; <img style="opacity: 1;" style="z-index: 111111111111;" src="/assets/img/Crypiton Logo White-1.svg" height="50px" > 
             </center>
+            <br>
+           
           </div>
         </div>
 
       </div>
     </div>
+    <center> 
+      <a target="blank" style=" position: relative;z-index:2;"  href="https://app.polydex.org/" type="button"
+      class="btn btn-primary btn-large mt-1 ">Go to App</a>
 
+    </center>
     <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="0 24 150 28 " preserveAspectRatio="none">
       <defs>
@@ -300,7 +306,7 @@
       if ($("#" + $this.id).lenght > 0) {
         $("#" + $this.id).remove();
       }
-      $this.object = $("<div style='z-inde:-1;margin:0;padding:0; overflow:hidden;position:absolute;bottom:0' id='" + $this.id + "'> </div>'").appendTo("body");
+      $this.object = $("<div style='margin:0;padding:0; overflow:hidden;position:absolute;bottom:0' id='" + $this.id + "'> </div>'").appendTo("body");
 
       $this.ww = $(window).width()
       $this.wh = $(window).height()

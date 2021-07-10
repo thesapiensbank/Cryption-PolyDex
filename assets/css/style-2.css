@@ -696,3 +696,47 @@ ul.social-network {
     margin: -20px 0 30px 0;
   }
 }
+
+.btn-primary { 
+  padding: 12px 25px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  /* Our gradient */  border: 1px solid #fff!important;
+  color: #7f00ff;
+  font-family: "wavehaus", sans-serif; 
+  background: linear-gradient(45deg, #fff, #fff); 
+  -webkit-appearance: none;
+}
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -10px;
+  left: 5%;
+  height: 110%;
+  opacity: 0.8;
+  border-radius: 50px!important;
+  /* Declaring our shadow color inherit from the parent (button) */
+  background: inherit;
+
+  /* Blurring the element for shadow effect */
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+
+  /* Transition for the magic */
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover{ 
+  padding: 12px 25px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  /* Our gradient */  border: 1px solid #7f00ff!important;
+  color: #fff;
+  font-family: "wavehaus", sans-serif; 
+  background: linear-gradient(45deg, #7f00ff, #2082e9); 
+  -webkit-appearance: none;
+  filter: drop-shadow(0 0.22rem 0.35rem rgba(255, 255, 255, 0.39));
+}
